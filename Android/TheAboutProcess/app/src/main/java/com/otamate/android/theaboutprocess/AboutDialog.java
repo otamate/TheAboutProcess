@@ -1,7 +1,8 @@
 /*
- * Copyright (c) 2015 OTAMate Technology Ltd. All Rights Reserved.
+ * Copyright (c) 2018 OTAMate Technology Ltd. All Rights Reserved.
  * http://www.otamate.com
  */
+
 package com.otamate.android.theaboutprocess;
 
 import android.content.ActivityNotFoundException;
@@ -27,11 +28,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class AboutDialog extends android.app.AlertDialog.Builder {
+class AboutDialog extends android.app.AlertDialog.Builder {
     private static final String TAG = AboutDialog.class.getSimpleName();
 
-
-    public AboutDialog(Context context) {
+    AboutDialog(Context context) {
         super(context);
 
         String versionStr = "Unknown";
@@ -95,7 +95,7 @@ public class AboutDialog extends android.app.AlertDialog.Builder {
             }
         });
 
-        setNeutralButton(getContext().getString(R.string.pref_ok), new DialogInterface.OnClickListener() {
+        setNeutralButton(getContext().getString(android.R.string.ok), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
             }
         });
@@ -109,7 +109,7 @@ public class AboutDialog extends android.app.AlertDialog.Builder {
 
     }
 
-    public void rateApp() {
+    private void rateApp() {
         try {
             Intent rateIntent = rateIntentForUrl("market://details");
             getContext().startActivity(rateIntent);

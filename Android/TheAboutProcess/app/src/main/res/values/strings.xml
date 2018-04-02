@@ -4,7 +4,6 @@
     <string name="app_by">App by</string>
     <string name="about_message1">%1s"</string>
     <string name="about_message2"><a href="http://www.otamate.com">OTAMate</a></string>
-    <string name="about_links">Many thanks to <a href="https://github.com/PhilJay/MPAndroidChart">Philipp Jahoda</a> for MPAndroidChart and <a href="http://www.grc.com">Steve Gibson</a> of GRC for being such an inspiration :-)</string>
+    <string name="about_links">Many thanks to <a href="https://www.example.com">John Doe</a> for cookies\nand <a href="https://www.example.com">Jane Doe</a> for being such an inspiration :-)\n\nPlease report bugs <a href="https://www.example.com">here.</a></string>
     <string name="pref_summary_about">About %1s</string>
-    <string name="pref_ok">Ok</string>
 </resources>
