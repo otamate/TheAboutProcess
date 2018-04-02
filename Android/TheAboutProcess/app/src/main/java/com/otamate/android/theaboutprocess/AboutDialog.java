@@ -22,8 +22,6 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.otamate.approvaltracker.globals.Constants;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -71,10 +69,10 @@ public class AboutDialog extends android.app.AlertDialog.Builder {
         setTitle(context.getString(R.string.pref_summary_about, context.getString(R.string.app_name)));
 
         ScrollView aboutContent = (ScrollView) ((LayoutInflater) context.getSystemService( Context.LAYOUT_INFLATER_SERVICE )).inflate(R.layout.about_content, null, false);
-        TextView aboutMessage1 = (TextView) aboutContent.findViewById(R.id.aboutMessage1);
-        TextView aboutMessage2 = (TextView) aboutContent.findViewById(R.id.aboutMessage2);
-        TextView aboutLinks = (TextView) aboutContent.findViewById(R.id.aboutLinks);
-        ImageView OTAMateIcon = (ImageView) aboutContent.findViewById(R.id.aboutOTAMateIcon);
+        TextView aboutMessage1 =  aboutContent.findViewById(R.id.aboutMessage1);
+        TextView aboutMessage2 = aboutContent.findViewById(R.id.aboutMessage2);
+        TextView aboutLinks = aboutContent.findViewById(R.id.aboutLinks);
+        ImageView OTAMateIcon =  aboutContent.findViewById(R.id.aboutOTAMateIcon);
 
         RotateAnimation rotate = new RotateAnimation(0, 360,
                 Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF,
