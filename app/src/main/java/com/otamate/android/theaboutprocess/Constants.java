@@ -4,8 +4,6 @@
  */
 package com.otamate.android.theaboutprocess;
 
-import android.support.annotation.ColorInt;
-
 public class Constants {
 
     public final static String DATE_FORMAT = "dd-MMM-yyyy h:mm a";

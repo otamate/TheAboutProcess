@@ -8,12 +8,14 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.0'
+        classpath group: 'org.tmatesoft.svnkit', name: 'svnkit', version: '1.8.10'
     }
 }
 
 allprojects {
     repositories {
         google()
+        maven { url "https://jitpack.io" }
         jcenter()
     }
 }

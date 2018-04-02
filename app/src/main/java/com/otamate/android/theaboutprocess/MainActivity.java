@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_about) {
+            new AboutDialog(this).show();
             return true;
         }
 
